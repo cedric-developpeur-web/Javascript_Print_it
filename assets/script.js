@@ -39,7 +39,7 @@ function displayDots() {
 const arrowRight = document.querySelector(".arrow_right");
 const arrowLeft = document.querySelector(".arrow_left");
 const img = document.querySelector(".banner-img");
-
+const texte = document.querySelector("#banner p");
 // creation fonctionneent du click droit
 function clickRight() {
 	arrowRight.addEventListener("click", () => {
@@ -51,6 +51,7 @@ function clickRight() {
 			index = 0;
 		}
 		img.src = slides[index].image;
+		texte.innerHTML = slides[index].tagLine;
 		arrayDots[index].classList.add("dot_selected");
 	});
 }
