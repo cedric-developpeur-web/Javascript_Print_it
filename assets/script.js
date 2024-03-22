@@ -67,6 +67,7 @@ function clickLeft() {
 			index = slides.length - 1;
 		}
 		img.src = slides[index].image;
+		texte.innerHTML = slides[index].tagLine;
 		arrayDots[index].classList.add("dot_selected");
 	});
 }
