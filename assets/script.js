@@ -43,7 +43,6 @@ const texte = document.querySelector("#banner p");
 // creation fonctionneent du click droit
 function clickRight() {
 	arrowRight.addEventListener("click", () => {
-		console.log("fleche droite");
 		const arrayDots = document.querySelectorAll(".dots .dot");
 		arrayDots[index].classList.remove("dot_selected");
 		index++;
@@ -59,7 +58,6 @@ function clickRight() {
 // creation fonctionneent du click gauche
 function clickLeft() {
 	arrowLeft.addEventListener("click", () => {
-		console.log("fleche gauche");
 		const arrayDots = document.querySelectorAll(".dots .dot");
 		arrayDots[index].classList.remove("dot_selected");
 		index--;
